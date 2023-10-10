@@ -1,7 +1,17 @@
 {
   "name": "my-dumb-vue-lib",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/my-dumb-vue-lib.umd.cjs",
+  "module": "./dist/my-dumb-vue-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-dumb-vue-lib.js",
+      "require": "./dist/my-dumb-vue-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
