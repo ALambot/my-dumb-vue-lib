@@ -1,4 +1,4 @@
-import './../node_modules/bulma/css/bulma.css'
+// Used if you want to test your components locally
 
 import { createApp } from 'vue'
 import App from './App.vue'

@@ -26,5 +26,6 @@
   </button>
 </template>
 
-<style>
+<style lang="scss">
+  @import "./../assets/main.scss";
 </style>
